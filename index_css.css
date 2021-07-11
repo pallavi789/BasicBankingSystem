@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    height: 80px;
+    background: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px  50px 0px 100px ;
+}
+
+nav .logo{
+    font-size: 33px;
+    color: #fff;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    color: crimson;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color: #1b1b1b;
+    background:none;
+   }
+ nav .menu-btn i{
+       color: #fff;
+       font-size: 22px;
+       cursor: pointer;
+       display: none;
+    }
+
+   #click{
+       display: none;
+   }
+   @media (max-width: 940px) {
+    nav .menu-btn i{
+        display: block;
+    }
+
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+       nav ul{
+           position: fixed;
+           top:80px;
+           left:-100%;
+           background: #111;
+           height: 100vh;
+           width: 100%;
+           display: block;
+           text-align: center;
+           transition: all 0.3s ease;
+       }
+
+       #click:checked ~ ul{
+           left: 0%;
+
+       }
+       nav ul li{
+           margin: 40px 0;
+        }
+        nav ul li a{
+            font-size: 20px;
+            display: block;
+
+        }
+        nav ul li a:hover,
+        nav ul li a.active{
+            color: cyan;
+            background: none;
+
+        }
+
+   }
+   
+   
+   .main{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  
+ 
+  
+  img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .btn {
+    color: #CD113B;
+    padding: 0.8rem;
+    font-size: 35px bold;
+    font-family: 'Varela Round', sans-serif;;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(196, 14, 14, 0.781);
+    background: transparent;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards_item {
+    display: flex;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 40rem) {
+    .cards_item {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 33.3333%;
+    }
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .card_content {
+    padding: 1rem;
+    background: #96BAFF;
+  }
+  
+  .card_title {
+    color: #4F0E0E;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+  }
+  
+  .card_text {
+    color: #0A1931;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+  }
+  .made_by{
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 35px;
+    text-align: center;
+  }
+
+.course {
+    width: 60%;
+    margin-left: 30rem;
+    text-align: center;
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-direction: column;
+
+}
+
+.course-col {
+    height: 180px;
+    
+    background: #ffcb91;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 180px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 600px;
+    margin-top: 70px;
+    color: #ff5e78;
+    font-family: 'Special Elite', cursive;
+    font-size: 45px;
+
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+@media(max-width:700px) {
+    .row {
+        flex-direction: column;
+
+
+    }
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  footer {
+    position: absolute;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+
+
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    
+}
+
+.socials li{
+    margin: 0 10px;
+    
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+    
+}
+
+.socials a:hover i{
+    color: aqua;
+    
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+   
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
